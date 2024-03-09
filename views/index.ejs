@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skaut celoročka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kolo štěstí pro zloděje</h1>
+    </header>
+    <main id="main">
+        <!-- <button id="oznacVse" value="true">Označ vše</button><br><br>
+        <form id="detiFormular">
+            <div id="seznamDeti"></div>
+            
+        </form>
+        <div id="errorMessage"></div>
+        <button onclick="koloStart()">Vylosuj náhodně</button> -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<template id="losovani">
+    <button id="oznacVse" value="true">Označ vše</button><br><br>
+    <form id="seznamDeti"></form>
+    <div id="errorMessage"></div>
+    <button onclick="koloStart()">Vylosuj náhodně</button>
+</template>
+<template id="dite">
+    <input type="checkbox">
+    <label></label><br>
+</template>
+<template id="vylosovano">
+    <h2 id="okraden"></h2>
+    <form id="form2">
+        <label for="penize">Kolik má peněz v bronzácích:</label><br>
+        <input type="number" name="penize" id="penize"><br><br>
+        <input type="checkbox" name="ochrance" id="ochrance">
+        <label for="ochrance">Má ochránce</label><br>
+    </form>
+    <button onclick="okradeni()" id="button2">Vylosuj ukradené peníze</button>
+</template>
+<template id="konec">
+    <p>Zloději se povedlo ukrást: <b id="ukradeno"></b> bronzáků.</p>
+    <button onclick="reset()" id="button3">Losování znova</button>
+</template>
+<script src="js/app.js"></script>
+</html>
